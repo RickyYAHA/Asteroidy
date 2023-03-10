@@ -5,25 +5,21 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     CameraScript cs;
-    // odleg³oœæ spawnowania w pionie i poziomie od œrodka gry
+    
     float verticalDistance, horizontalDistance;
-    //licznik do nastêpnego spawnu
     float spawnTimer = 0;
-    //co ile ma nastêpowaæ spawn
     public float spawnInterval = 5;
-    //prefab kamulca
     public GameObject asteroidPrefab;
-   
     public GameObject gameOverScreen;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         cs = Camera.main.GetComponent<CameraScript>();
         Time.timeScale = 1.0f;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         spawnTimer += Time.deltaTime;
