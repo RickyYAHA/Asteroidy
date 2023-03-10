@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
     public float spawnInterval = 5;
     //prefab kamulca
     public GameObject asteroidPrefab;
-    //ekran konca gry
+   
     public GameObject gameOverScreen;
 
     // Start is called before the first frame update
